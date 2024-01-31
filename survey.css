@@ -1,0 +1,81 @@
+body{
+    background-image: url(https://wallpapers.com/images/hd/mauve-background-1920-x-1080-8horg08yuktkl0qy.jpg);
+    color: whitesmoke;
+    background-position: auto;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+
+h1, p{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-size: larger;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+form{
+    width: 80%;
+    min-width: 300px;
+    max-width: 480px;
+    background-color: rgba(145, 70, 255, 70%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+input, select{
+    background-color: #cbc3e3;
+    border-radius: 2%;
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 1.5em;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label{
+    display: block;
+}
+
+.option-label{
+    display: inline-block;
+    width: 1em;
+    margin: 1em;
+}
+
+.select-input{
+    width: 1em;
+    margin: 1em;
+}
+
+textarea{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#submit{
+    width: 95%;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: block;
+    background-color: #7851a9;
+    color: azure;
+    font-size: large;
+}
+
