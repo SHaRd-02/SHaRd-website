@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Watcher</title>
+    <link rel="stylesheet" href="bmiStyle.css">
+</head>
+<body>
+        <main>
+          <h1>BMI Calculator</h1>
+          <label for="weight">weight: </label>
+          <input type="number" name="weight" id="weight" placeholder="Enter your weight in kg">
+          <label for="height">height: </label>
+          <input type="number" name="height" id="height" placeholder="Enter your height in meters">
+          <button type="button" onclick="calculateBMI()">Calculate</button>
+          <p id="result">Your BMI is: </p>
+          <table>
+      
+            <tbody>
+              <tr>
+                <th colspan="5"  >Body Mass Index Chart</th>
+              </tr>
+              <tr>
+                <td class="col1">18.5</td>
+                <td class="col2">18.5 - 24.9</td>
+                <td class="col3">25 - 29.9</td>
+                <td class="col4">30 - 39.9</td>
+                <td class="col5">40.0</td>
+              </tr>
+              <tr>
+                <td class="col1">Underweight</td>
+                <td class="col2">Normal Weight</td>
+                <td class="col3">Overweight</td>
+                <td class="col4">Obesity</td>
+                <td class="col5">Extreme Obesity</td>
+              </tr>
+            </tbody>
+          </table>
+        </main>
+    <script>
+        function calculateBMI() {
+      // Obtener valores de peso y altura
+      var weight = parseFloat(document.getElementById("weight").value);
+      var height = parseFloat(document.getElementById("height").value);
+
+      // Calcular el BMI
+      var bmi = weight / (height * height);
+
+      // Mostrar el resultado
+      var resultElement = document.getElementById("result");
+      resultElement.style.color = "aliceblue";
+      resultElement.innerHTML = "Your BMI is: " + bmi.toFixed(2);
+
+
+
+      if (bmi >= 18.5 && bmi <= 24.9) {
+        resultElement.style.backgroundColor = "rgb(92, 201, 110)";
+      } else if (bmi >= 25 && bmi <= 29.9) {
+        resultElement.style.backgroundColor = "rgb(247, 171, 7)";
+      } else if (bmi >= 30 && bmi <= 39.9) {
+        resultElement.style.backgroundColor = "rgb(226, 105, 105)";
+      } else if (bmi >= 40) {
+        resultElement.style.backgroundColor = "rgb(216, 27, 27)";
+      } else {
+        resultElement.style.backgroundColor = "rgb(127, 197, 230)";
+      }
+
+    }
+    </script>
+</body>
+</html>
