@@ -1,41 +1,13 @@
-{
-  "background_color": "#000000",
-  "dir": "auto",
-  "display": "browser",
-  "name": "BMI Watcher",
-  "orientation": "portrait",
-  "scope": "/",
-  "short_name": "BMI",
-  "start_url": "https://shard-02.github.io/SHaRd-website/bmi.html",
-  "theme_color": "#000000",
-  "lang": "en",
-  "categories": [
-    "fitness",
-    "health",
-    "lifestyle"
-  ],
-  "id": "bmi_watcher-shard",
-  "description": "BMI Watcher is a body mass index calculator",
-  "related_applications": [
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/us/app/bmi-calculator-weight-loss/id666822519",
-      "id": ""
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/us/app/bmi-calculator/id550932668",
-      "id": ""
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.appovo.bmicalculator&amp;hl=en&amp;gl=US&amp;pli=1",
-      "id": ""
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.sdgcode.bmicalculator&amp;hl=en&amp;gl=US",
-      "id": ""
-    }
-  ]
+{"name":"BMI Watcher",
+"short_name":"BMI",
+"icons":
+[
+    {"src":"/android-chrome-192x192.png", "sizes":"192x192","type":"image/png"},
+    {"src":"/android-chrome-512x512.png", "sizes":"512x512","type":"image/png"},
+    {"src":"/apple-touch-icon.png", "sizes":"180x180","type":"image/png"} 
+],
+"theme_color":"#000000",
+"background_color":"#000000",
+"display":"standalone",
+"apple-touch-startup-image": "/splash-screen.png"
 }
